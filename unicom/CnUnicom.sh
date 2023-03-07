@@ -39,7 +39,7 @@ aqGfLgKvZHOnwTjyNqjBUxzMeQlEC2czEMSwIDAQAB
 EOF
 
     crypt_username=$(echo -n 17612588582 | openssl rsautl -encrypt -inkey $workdir/rsa_public.key -pubin -out >(base64 | tr "\n" " " | sed s/[[:space:]]//g))
-    crypt_password=$(echo -n 096826 | openssl rsautl -encrypt -inkey $workdir/rsa_public.key -pubin -out >(base64 | tr "\n" " " | sed s/[[:space:]]//g))
+    crypt_password=$(echo -n 123456 | openssl rsautl -encrypt -inkey $workdir/rsa_public.key -pubin -out >(base64 | tr "\n" " " | sed s/[[:space:]]//g))
 }
 
 function urlencode() {
