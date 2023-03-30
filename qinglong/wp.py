@@ -1,12 +1,13 @@
 '''
 Date: 2023-03-30 15:49:48
 Author: diaoyb
-LastEditTime: 2023-03-30 18:21:30
+LastEditTime: 2023-03-30 18:27:59
 Describe: wordpress 一些网站的签到
 '''
 import requests
 import os
 import sys
+from tools import notify 
 
 url = "https://www.22vd.com/wp-admin/admin-ajax.php"
 
@@ -38,7 +39,7 @@ else:
     sys.exit()
 
 wp_cookie=login(wp_name,wp_password)
-print(wp_cookie)
+
 payload = "action=sign_ajax&ajax_date=days"
 headers = {
     'accept': "*/*",
@@ -54,4 +55,8 @@ headers = {
 
 response = requests.request("POST", url, data=payload, headers=headers)
 
-print(response.text)
+if response.status_code==200:
+    message = "签到成功"
+    notify.send("wp签到", message)
+
+
