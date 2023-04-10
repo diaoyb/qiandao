@@ -1,13 +1,13 @@
 '''
 Date: 2023-03-30 15:49:48
 Author: diaoyb
-LastEditTime: 2023-03-30 18:27:59
+LastEditTime: 2023-04-10 16:36:15
 Describe: wordpress 一些网站的签到
 '''
 import requests
 import os
 import sys
-from tools import notify 
+import notify 
 
 url = "https://www.22vd.com/wp-admin/admin-ajax.php"
 
@@ -37,6 +37,7 @@ if os.environ.get("wp_name"):
 else:
     print("请在环境变量填写wp的值")
     sys.exit()
+
 
 wp_cookie=login(wp_name,wp_password)
 

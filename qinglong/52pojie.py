@@ -1,13 +1,13 @@
 '''
 Date: 2023-03-30 14:28:44
 Author: diaoyb
-LastEditTime: 2023-03-30 18:20:51
+LastEditTime: 2023-03-31 10:22:09
 '''
 # -*- coding: utf-8 -*-
-
+# * 30 9 * *
 import os
 import sys
-from tools import notify 
+import notify 
 import urllib.parse
 import requests
 from bs4 import BeautifulSoup
@@ -73,3 +73,4 @@ for cookie in cookies.split("&"):
     n += 1
     print(message)
     notify.send("吾爱签到", message)
+
