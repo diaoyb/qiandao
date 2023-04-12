@@ -1,10 +1,10 @@
 '''
 Date: 2023-03-30 14:28:44
 Author: diaoyb
-LastEditTime: 2023-04-12 11:48:07
+LastEditTime: 2023-04-12 11:49:26
 '''
 # -*- coding: utf-8 -*-
-# cron "20 9 * * *" 
+# cron "20 9 * * *",tag=my
 # const $ = new Env('吾爱破解');
 import os
 import sys
