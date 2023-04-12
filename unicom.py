@@ -31,9 +31,9 @@ from sys import stdout, exit
 from base64 import b64encode
 from json import dumps
 
-from encrypt_symmetric import Crypt
-import notify
-from tool import get_environ, random_sleep
+from tools.encrypt_symmetric import Crypt
+import tools.notify as notify
+from tools.tool import get_environ, random_sleep
 # random_sleep(0, 1600)
 
 

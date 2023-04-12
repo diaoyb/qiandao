@@ -1,13 +1,15 @@
 '''
 Date: 2023-03-30 15:49:48
 Author: diaoyb
-LastEditTime: 2023-04-10 16:36:15
+LastEditTime: 2023-04-12 11:47:50
 Describe: wordpress 一些网站的签到
 '''
+# -*- coding: utf-8 -*-
+# cron "10 9 * * *" 
 import requests
 import os
 import sys
-import notify 
+import tools.notify as notify 
 
 url = "https://www.22vd.com/wp-admin/admin-ajax.php"
 

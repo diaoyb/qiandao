@@ -1,13 +1,14 @@
 '''
 Date: 2023-03-30 14:28:44
 Author: diaoyb
-LastEditTime: 2023-03-31 10:22:09
+LastEditTime: 2023-04-12 11:48:07
 '''
 # -*- coding: utf-8 -*-
-# * 30 9 * *
+# cron "20 9 * * *" 
+# const $ = new Env('吾爱破解');
 import os
 import sys
-import notify 
+import tools.notify as notify 
 import urllib.parse
 import requests
 from bs4 import BeautifulSoup
