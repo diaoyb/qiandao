@@ -1,7 +1,7 @@
 <!--
  * @Date: 2023-03-30 14:28:28
  * @Author: diaoyb
- * @LastEditTime: 2023-04-12 11:56:31
+ * @LastEditTime: 2023-04-12 15:36:38
 -->
 # 自用 ql 脚本
 
@@ -19,6 +19,9 @@ appId获取最方便的方法就是手机文件管理器，找到路径为 Unico
 un_phone
 多个账号使用;分割
 un_password
+
+### 电信签到
+chinaTelecomAccount="13888888888#123456"
 
 
 ql repo https://github.com/diaoyb/qiandao.git  "backup|JS|logs|login"  "tools|JS|logs|login"

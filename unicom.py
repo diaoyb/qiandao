@@ -1,7 +1,7 @@
 '''
 Date: 2023-04-10 14:46:17
 Author: yongbao
-LastEditTime: 2023-04-12 15:11:02
+LastEditTime: 2023-04-12 16:11:01
 Description: 联通签到
 '''
 from time import sleep
