@@ -4,7 +4,7 @@
 # @Author : github@limoruirui https://github.com/limoruirui
 # @Time : 2023/1/27 21:03
 # cron "" script-path=xxx.py,tag=匹配cron用
-# const $ = new Env('某通畅游');
+# const $ = new Env('联通畅游');
 # -------------------------------
 """
 1  脚本仅供学习交流使用, 请在下载后24h内删除
@@ -198,17 +198,18 @@ class CUG:
     def main(self):
         self.get_ecsToken()
         self.login()
-        old_score = self.init()
-        self.check_in()
-        self.lotter()
-        self.pay_lotter(self.get_pay_lotter_list())
-        self.play_game()
-        [self.finish_task(task_id, productId) for task_id, productId in self.get_task().items()]
-        sleep(5)
-        now_score = self.init()
-        today_score = now_score - old_score
-        self.msg += f"账号{self.phone_num}---本次运行获得{today_score}分, 当前共有{now_score}分\n"
-        notify.send("某通畅游", self.msg)
+        # old_score = self.init()
+        # self.check_in()
+        # self.lotter()
+        # self.pay_lotter(self.get_pay_lotter_list())
+        # self.play_game()
+        # [self.finish_task(task_id, productId) for task_id, productId in self.get_task().items()]
+        # sleep(5)
+        # now_score = self.init()
+        # today_score = now_score - old_score
+        # self.msg += f"账号{self.phone_num}---本次运行获得{today_score}分, 当前共有{now_score}分\n"
+        self.exchange()
+        notify.send("联通畅游","运行成功")
 if __name__ == '__main__':
     unicom_game_info = get_environ("UNICOM_GAME_ACCOUNT_INFO")
     if unicom_game_info == "":
