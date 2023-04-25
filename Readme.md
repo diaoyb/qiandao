@@ -1,7 +1,7 @@
 <!--
  * @Date: 2023-03-30 14:28:28
  * @Author: diaoyb
- * @LastEditTime: 2023-04-12 15:36:38
+ * @LastEditTime: 2023-04-12 17:43:55
 -->
 # 自用 ql 脚本
 
@@ -23,5 +23,8 @@ un_password
 ### 电信签到
 chinaTelecomAccount="13888888888#123456"
 
+
+### 饿了么
+https://h5.ele.me/
 
 ql repo https://github.com/diaoyb/qiandao.git  "backup|JS|logs|login"  "tools|JS|logs|login"

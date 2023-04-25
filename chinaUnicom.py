@@ -149,6 +149,7 @@ class CUG:
         }
         data = post(url, headers=self.headers, json=body).json()
         print(data)
+        return data['msg']
     def init(self):
         """
         初始化活动及查询积分
@@ -208,8 +209,8 @@ class CUG:
         # now_score = self.init()
         # today_score = now_score - old_score
         # self.msg += f"账号{self.phone_num}---本次运行获得{today_score}分, 当前共有{now_score}分\n"
-        self.exchange()
-        notify.send("联通畅游","运行成功")
+        msg=self.exchange()
+        notify.send("联通畅游",msg)
 if __name__ == '__main__':
     unicom_game_info = get_environ("UNICOM_GAME_ACCOUNT_INFO")
     if unicom_game_info == "":
